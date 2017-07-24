@@ -1,0 +1,34 @@
+body{
+  background: #fff;
+}
+.ll.activ{
+  color: red;
+  position: relative;
+}
+.ll{
+  position: relative;
+}
+.ll.activ:after{
+  content: '';
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  bottom: 0;
+  height: 4px;
+  background-color:red;
+}
+.messagehead{
+  margin: 0;
+  padding: 0;
+  width:100%;
+  height: 50px;
+  display: flex;
+}
+.message{
+  flex:1;
+  line-height: 50px;
+  text-align: center;
+}
+li{
+  list-style: none;
+}

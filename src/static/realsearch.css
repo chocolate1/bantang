@@ -1,0 +1,149 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #fff;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.realsearch{
+  width: 100%;
+  height: 100%;
+}
+#box{
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+#box::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #8a8a8a;
+  transform: scaleY(.5);
+}
+#box .color{
+  position: absolute;
+  left: 5%;
+  right: 10%;
+  top: 10px;
+  height: 30px;
+  background-color: #efefef;
+  z-index: -10;
+}
+#box input{
+  width: 85%;
+  margin-left: 5%;
+  margin-top: 10px;
+  height: 30px;
+  line-height: 30px;
+  background:url('../assets/search.png') no-repeat 15px 10px;
+}
+#box button{
+  display: block;
+  float: right;
+  width: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  color: #8a8a8a;
+}
+.history_box{
+  width: 100%;
+  height: 100%;
+}
+
+.history_box p{
+  display: block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  text-align: left;
+  text-indent: 10px;
+  color: #8a8a8a;
+}
+.history_box .content{
+  width: 100%;
+  height: 70px;
+}
+.content_list_history{
+  display: block;
+  float: left;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #bfbfbf;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+.history_box .clear{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #8a8a8a;
+  position: relative;
+  background:url('../assets/back.png') no-repeat 33% 42%;
+}
+.history_box .clear::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #8a8a8a;
+  transform: scaleY(.5);
+}
+.history_box .clear::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #8a8a8a;
+  transform: scaleY(.5);
+}
+.history_box .background{
+  display: block;
+  width: 100%;
+  height: 20px;
+  background-color: #efefef;
+}
+.realsearch_content{
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.realsearch_content p{
+  display: block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  text-align: left;
+  color: #8a8a8a;
+  text-indent: 10px;
+}
+.realsearch_content li{
+  float: left;
+  margin: 10px  10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+  border: 1px solid #8a8a8a;
+}
+.realsearch_content a{
+  color: black;
+}

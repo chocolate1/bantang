@@ -1,0 +1,147 @@
+body{
+  background: #fff;
+}
+.tuceng{
+	position: fixed;
+	z-index:100;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color:black;
+	opacity: .4;
+	color: #fff;
+}
+.redtu{
+	position: fixed;
+	z-index:130;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: #fff;
+}
+.redtu .showD{
+	position: fixed;
+	z-index: 130;
+	left: 20%;
+	bottom: 60px;
+}
+
+.redtu .showW{
+	position: fixed;
+	z-index: 130;
+	right: 20%;
+	bottom: 60px;
+}
+.redtu img{
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+.redtu .close{
+	position: fixed;
+	z-index: 130px;
+	left: 41%;
+	bottom: 10px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	background: url('../assets/tclose.png') no-repeat;
+	background-size: cover;
+}
+.redtu .white{
+	position: fixed;
+	z-index: 120px;
+	left: 44%;
+	bottom: 10px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background:#fff;
+}
+.footer{
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 55px;
+	z-index: 10;
+}
+.footer::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	transform: scaleY(.5);
+	background-color: #bfbfbf;
+}
+.bottombar{
+  width: 100%;
+	height: 55px;
+  display: flex;
+  background-color: #fff;
+}
+.bottombar li{
+	flex: 1;
+	height: 55px;
+  list-style: none;
+}
+.icon {
+  display:block;
+  width: 100%;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+}
+.icon-home{
+	background: url('../assets/home.png') no-repeat;
+  background-position: center center;
+}
+.icon-find{
+ background: url('../assets/find.png') no-repeat;
+  background-position: center center;
+}
+.icon-info{
+	background: url('../assets/message.png') no-repeat;
+  background-position: center center;
+}
+.icon-my{
+ background: url('../assets/my.png') no-repeat;
+  background-position: center center;
+}
+.router-link-active .icon-home {
+  background: url('../assets/homeselect.png')no-repeat;
+  background-position: center center;
+}
+.router-link-active .icon-find {
+  background: url('../assets/findselect.png')no-repeat;
+  background-position: center center;
+}
+.router-link-active .icon-info {
+  background: url('../assets/messageselect.png')no-repeat;
+	  background-position: center center;
+}
+.router-link-active .icon-my {
+  background: url('../assets/myselect.png') no-repeat;
+  background-position: center center;
+}
+ p {
+	text-align: center;
+}
+.router-link-active .home_text{
+  color: red;
+	text-align: center;
+}
+.wrap.more img{
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,115 @@
+body{
+  background: #fff;
+}
+.tiphide{
+  display: none;
+}
+.tip {
+  margin-top: 100px;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+.tipshow{
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  padding-top: 30px;
+  width: 100%;
+  text-indent: 2em;
+}
+.tipshow img{
+  width: 20px;
+  height: 20px;
+}
+#box{
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+#box .color{
+  position: absolute;
+  left: 5%;
+  right: 10%;
+  top: 10px;
+  height: 30px;
+  background-color: #efefef;
+  z-index: -1;
+}
+#box input{
+width: 85%;
+margin-left: 5%;
+margin-top: 10px;
+height: 30px;
+line-height: 30px;
+background:url('../assets/search.png') no-repeat 15px 10px;
+}
+#box button{
+  display: block;
+  float: right;
+  width: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  color: #8a8a8a;
+}
+.see_content {
+  width: 100%;
+  height: 100%;
+  /*background-color: red;*/
+}
+.see_content_ul{
+  padding-top: 10%;
+  width: 98%;
+  height: 90%;
+  margin: 0 auto;
+}
+.see_content_ul li{
+  width: 50%;
+  list-style: none;
+  float: left;
+}
+.see_content_ul li .see_picture{
+  display: block;
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
+}
+.see_name{
+  display: block;
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 14px;
+  text-indent: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.see_xinxi{
+  width: 90%;
+  height: 50px;
+  /*border-bottom: 1px solid #9d9d9d;
+  border-right:  1px solid #9d9d9d;
+  border-left:  1px solid #9d9d9d;*/
+}
+.see_xinxi .see_price{
+  width:50px;
+  height: 30px;
+  display: block;
+  float: left;
+}
+.see_xinxi .see_content .love{
+  display: block;
+  width: 10px;
+  height: 10px;
+  float: left;
+}
+.see_number{
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}

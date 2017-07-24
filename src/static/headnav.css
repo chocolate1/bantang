@@ -1,0 +1,81 @@
+body{
+  background: #fff;
+}
+.container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 100;
+  background-color: #fff;
+}
+.headnav{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 100;
+  background-color: #fff;
+}
+.s .router-link-active{
+  position: relative;
+  color: red;
+  height: 50px;
+  line-height: 50px;
+  align-items: center;
+}
+.s .router-link-active::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: red;
+}
+.s.swiper-slide.swiper-slide-active{
+  position: relative;
+  color: red;
+  height: 50px;
+  line-height: 50px;
+  align-items: center;
+}
+.s.swiper-slide.swiper-slide-active::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 60%;
+  bottom: 0;
+  height: 2px;
+  background-color: red;
+}
+.headnav li{
+  float: left;
+  list-style: none;
+  height: 50px;
+  line-height: 50px;
+  align-items: center;
+}
+.one{
+  color:red;
+}
+.headnav::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1px;
+  transform: scaleY(.5);
+  background-color: #DCDCDC;
+}
+.headnav::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  transform: scaleY(.5);
+  background-color: #DCDCDC;
+}
