@@ -1,4 +1,4 @@
-# bantang
+# vue2.0仿半糖
 
 > A Vue.js project
 
