@@ -1,7 +1,7 @@
 # vue2.0仿半糖
 
 > A Vue.js project
-
+[预览demo](https://chocolate1.github.io/vue-bantang-demo/index.html#/)
 ## Build Setup
 
 ``` bash
