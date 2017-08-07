@@ -83,8 +83,8 @@
     }
    ```
   * 写文章发布文章的功能：写文章和发布文章当然需要数据的存取，而且这是一个分享好物的功能必须得有图片才更有说服力，而因为用户发布完图片后不管是否刷新自己辛苦写的文章还是要在的呀，要不然大家还写个啥呢，但是发布出去之后写文章和预览页面就不能还保存着发布出去的数据内容了，所以我就将写文章和预览文章的页面中的状态保存在store里面，当点击发布按钮的时候，将store里面的数据保存到localstorage当中，跳转到我的文章以及文章查看页面时则获取localstorage内的数据，现在只能获取最新的文章因为本仙女还没有将其存储为一个对象数组，以后定会慢慢折腾。<br>
- 主要的代码实现：
- ### 页面实例创建完成之后：
+ 主要的代码实现：<br>
+ 页面实例创建完成之后：
  ```
   created(){
         this.headline=this.$store.state.headline;
@@ -94,7 +94,7 @@
         }
        }
  ```
- ### 图片的上传和删除（参考eliment-ui 的upload组件）
+ 图片的上传和删除（参考eliment-ui 的upload组件）<br>
  ```
   handleRemove(file, fileList) {
         this.fileListurl=fileList;
@@ -116,7 +116,7 @@
        this.$refs.send.className="send_active"
      }
  ```
- #### 预览
+预览<br>
  ```
   pre_see(){
         this.fileListurl=this.$store.state.picurl;
@@ -125,7 +125,7 @@
         this.$router.push({path:'/pre_see'})
       },
  ```
- ### 发布成功(引用了Toast吐司提示)：值得注意的是不要忘记在引用的页面加上import { Toast } from 'mint-ui';
+发布成功(引用了Toast吐司提示)：值得注意的是不要忘记在引用的页面加上import { Toast } from 'mint-ui';
  ```
  send_out(){
         this.$store.dispatch('writetitle',this.headline);
@@ -145,7 +145,6 @@
       },
   ```
 ### 总结
---------------
   * 当时纠结写网页版还是手机版所以直接用的px，后来做成移动端后悔不已，不像微信小程序一开始就采用了移动端的适配rpx,哇，但是页面太多，然后小仙女就这么一直错下去了（以后还是要改回来的(╥╯^╰╥)），求求你们如果想好了做移动端请用rem自适应布局，别跟我一样犯蠢!!!
   * 当碰到不会的问题，请多看看文档，是否自己有所遗漏。当初router-link-active这个知识点就没扫到结果自己写了一大堆不如一个默认类名来的痛快，所以当碰到繁杂的工作量时你就要怀疑一下自身是否自己错过了什么快捷的办法。
   * 关于dist文件夹，一开始你的index预览页面啥也没有，这正常，改变一下各个文件的路径就好了。图片显示不出来也是一样的道理。
