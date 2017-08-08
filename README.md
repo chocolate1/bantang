@@ -42,7 +42,6 @@
        this.$store.commit('checking')
        this.$router.push({path:'/'})
      }
-
     } 
     <router-link  :to="isLogin" tag="li">
 				<span class="icon icon-info"></span>
