@@ -3,7 +3,9 @@
 <br>
 ## 先上波动态图
 ![登录](https://github.com/chocolate1/bantang/blob/master/src/assets/login.gif)<br>
+<br>
 ![搜索](https://github.com/chocolate1/bantang/blob/master/src/assets/search.gif)<br>
+<br>
 ![写文章](https://github.com/chocolate1/bantang/blob/master/src/assets/article.gif)
 ### 主要的页面效果:<br>
  * 触摸内容滑动
