@@ -24,7 +24,7 @@
               <p class="sendform_name">小唐君</p>
               <p class="sendform_content">您的文章<span class="sendform_headline">&lt;&lt;{{headline}}&gt;&gt;</span>发布成功</p>
             </div>
-            <img class="sendform_avatar" :src="this.pic[0]" alt="">
+            //<img class="sendform_avatar" :src="this.pic[0]" alt="">
           </li>
         </ul>
       </div>
@@ -51,9 +51,6 @@ export default {
     this.headline=localStorage.getItem("title");
     this.content=localStorage.getItem("content");
     this.pic=JSON.parse(localStorage.getItem("pics"));
-  },
-  methods:{
-
   }
 }
 </script>

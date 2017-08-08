@@ -33,7 +33,7 @@
     created () {
       this.inputText = this.$store.state.inputText
       console.log('hghhhh');
-      this.axios.get('http://easy-mock.com/mock/5940ff968ac26d795f00bd9e/care/list/care/list')
+      this.axios.get('https://easy-mock.com/mock/5940ff968ac26d795f00bd9e/care/list/care/list')
         .then((res)=>{
            console.log(res.data)
            let message = res.data
