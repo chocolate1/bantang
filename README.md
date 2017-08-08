@@ -9,7 +9,7 @@
  * 主要的各个页面效果实现
 
 # 线上体验：<br>
-[（￣︶￣）↗预览demo](https://chocolate1.github.io/vue-bantang-demo/index.html#/)（切换手机模式预览更加，发文章的功能点击底部菜单栏+哦）<br>
+[（￣︶￣）↗预览demo](https://chocolate1.github.io/vue-bantang-demo/index.html#/)（切换手机模式预览更加，发文章的功能点击底部菜单栏+哦，搜索请搜索口红化妆品等关键字，其他数据还没mock进去...）<br>
 [（￣︶￣）↗源代码](https://github.com/chocolate1/bantang)<br>
 <br>
 ### 技术栈:<br>
