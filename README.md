@@ -52,8 +52,9 @@
 			 	<p class="home_text">我的</p>
 		  </router-link>
       ```
+      <br>
  ### 商品的搜索功能：搜索，当然首先得有数据让你搜索，我选择了easy-mock来创建我的假数据[关于easy-mock](http://easy-mock.com/docs),然后对数据请求[关于axios可参考](https://www.awesomes.cn/repo/mzabriskie/axios)，根据关键字进行匹配，搜索完毕后有个搜索历史，然后清空搜索历史。（这些比较基础请参考源代码）<br>
-   ###### 主要的代码实现：<br>
+   主要的代码实现：<br>
    ```
     created () {
       this.inputText = this.$store.state.inputText
