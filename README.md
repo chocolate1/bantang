@@ -8,8 +8,7 @@
  * 滑动一定位置固定某元素的位置
  * 遮罩层的效果
  * 主要的各个页面效果实现
- <br>
- <br>
+
 # 线上体验：<br>
 [（￣︶￣）↗预览demo](https://chocolate1.github.io/vue-bantang-demo/index.html#/)（切换手机模式预览更加，发文章的功能在+号里面哦）<br>
 [（￣︶￣）↗源代码](https://github.com/chocolate1/bantang)<br>
