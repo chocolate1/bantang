@@ -9,7 +9,7 @@
  * 主要的各个页面效果实现
 
 # 线上体验：<br>
-[（￣︶￣）↗预览demo](https://chocolate1.github.io/vue-bantang-demo/index.html#/)（切换手机模式预览更加，发文章的功能在+号里面哦）<br>
+[（￣︶￣）↗预览demo](https://chocolate1.github.io/vue-bantang-demo/index.html#/)（切换手机模式预览更加，发文章的功能点击底部菜单栏+哦）<br>
 [（￣︶￣）↗源代码](https://github.com/chocolate1/bantang)<br>
 <br>
 ### 技术栈:<br>
@@ -23,7 +23,7 @@
 <br>
 
 ### 主要的功能实现:<br>
-* 用户的登录状态：因为涉及用户的个人信息修改等页面都要有登录状态的判断，若未登录则不显示其页面，所以我们必须对用户的登录状态(存入store里的boolean变量)进行改变，并且控制登录前后的页面跳转。（这里多一句小嘴，就是router-link激活时其实自己本身有个默认类名router-link-active,若想对激活元素操作你可以选择这个类名，但是值得注意的是"是否激活" 默认类名的依据是 inclusive match即全包含匹配[(关于router-link-active详细参照)]（https://router.vuejs.org/zh-cn/api/router-link.html）)<br>
+* 用户的登录状态：因为涉及用户的个人信息修改等页面都要有登录状态的判断，若未登录则不显示其页面，所以我们必须对用户的登录状态(存入store里的boolean变量)进行改变，并且控制登录前后的页面跳转。（这里多一句小嘴，就是router-link激活时其实自己本身有个默认类名router-link-active,若想对激活元素操作你可以选择这个类名，但是值得注意的是"是否激活" 默认类名的依据是 inclusive match即全包含匹配[关于router-link-active详细参照]（https://router.vuejs.org/zh-cn/api/router-link.html）)<br>
 
 ##### 主要代码实现:
 ```
@@ -49,7 +49,7 @@
 			 	<p class="home_text">我的</p>
 		  </router-link>
 ```
-* 商品的搜索功能：搜索，当然首先得有数据让你搜索，我选择了easy-mock来创建我的假数据[(关于easy-mock)](http://easy-mock.com/docs),然后对数据请求[(关于axios可参考)](https://www.awesomes.cn/repo/mzabriskie/axios)，根据关键字进行匹配，搜索完毕后有个搜索历史，然后清空搜索历史。（这些比较基础请参考源代码）<br>
+* 商品的搜索功能：搜索，当然首先得有数据让你搜索，我选择了easy-mock来创建我的假数据[关于easy-mock](http://easy-mock.com/docs),然后对数据请求[关于axios可参考](https://www.awesomes.cn/repo/mzabriskie/axios)，根据关键字进行匹配，搜索完毕后有个搜索历史，然后清空搜索历史。（这些比较基础请参考源代码）<br>
 ##### 主要的代码实现：<br>
 ```
    created () {
@@ -148,9 +148,10 @@ send_out(){
   * 当碰到不会的问题，请多看看文档，是否自己有所遗漏。当初router-link-active这个知识点就没扫到结果自己写了一大堆不如一个默认类名来的痛快，所以当碰到繁杂的工作量时你就要怀疑一下自身是否自己错过了什么快捷的办法。
   * 关于dist文件夹，一开始你的index预览页面啥也没有，这正常，改变一下各个文件的路径就好了。图片显示不出来也是一样的道理。
   * 这个项目到目前的程度也做完挺久的了，一直没有写总结，这也是个毛病，因为很多东西当时觉得需要注意，现在倒觉得没什么，所以以后一定要边做边总结，让后来的人能更快的上手。还有购物和晒照功能以及数据的懒加载等在向我招手，我会尽快握住他们的。
+  * 关于README.md的编写，值得注意的是一定要对齐对齐！！！
 <br>
 
-#### 给小星星的都是高富帅和白富美✺◟(∗❛ัᴗ❛ั∗)◞✺，请向我发射你们的小星星好嘛!!!
+#### 给小星星的都是高富帅和白富美✺◟(∗❛ัᴗ❛ั∗)◞✺，请向我发射你们的小星星吧!!!
    
 ## Build Setup
 
