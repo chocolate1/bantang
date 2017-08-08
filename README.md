@@ -2,7 +2,9 @@
   Vue是构建用户界面的先进框架。它不像其他全能的框架，Vue是从头开始逐渐设计起来的。核心库只专注于视图层，它非常容易上手并且可以与其他库或现有的项目进行整合。在另一方面，当与相关工具和支持库结合使用时，Vue也能完美的驱动复杂的单页面应用。小女子深知 “纸上得来终觉浅,绝知此事要躬行.”，且有着大多数女孩纸的优点爱购物逛各种购物平台(￣▽￣),于是开始了vue2.0仿半糖APP的故事，而半塘作为一个为大众推荐好物的平台，自然最重要的就是能够搜索好物和发现好物，所以针对这自认为最重要的两个功能开始了代码世界的遨游。
 <br>
 ## 预览
-![预览](https://github.com/chocolate1/bantang/blob/master/src/assets/search.gif)
+![登录](https://github.com/chocolate1/bantang/blob/master/src/assets/login.gif)
+![搜索](https://github.com/chocolate1/bantang/blob/master/src/assets/search.gif)
+![写文章](https://github.com/chocolate1/bantang/blob/master/src/assets/article.gif)
 ### 主要的页面效果:<br>
  * 触摸内容滑动
  * 轮播图
