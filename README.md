@@ -28,7 +28,7 @@
 ### 主要的功能实现:<br>
  
    * 用户的登录状态：因为涉及用户的个人信息修改等页面都要有登录状态的判断，若未登录则不显示其页面，所以我们必须对用户的登录状态(存入store里的boolean变量)进行改变，并且控制登录前后的页面跳转。（这里多一句小嘴，就是router-link激活时其实自己本身有个默认类名router-link-active,若想对激活元素操作你可以选择这个类名，但是值得注意的是"是否激活" 默认类名的依据是 inclusive match即全包含匹配[关于router-link-active详细参照]（https://router.vuejs.org/zh-cn/api/router-link.html）)<br>
-   #### 主要代码实现:
+   #### 主要代码实现:<br>
  ```
    login() {
       var myreg =/^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
@@ -52,6 +52,7 @@
 			 	<p class="home_text">我的</p>
 		  </router-link>
       ```
+      <br>
   * 商品的搜索功能：搜索，当然首先得有数据让你搜索，我选择了easy-mock来创建我的假数据[关于easy-mock](http://easy-mock.com/docs),然后对数据请求[关于axios可参考](https://www.awesomes.cn/repo/mzabriskie/axios)，根据关键字进行匹配，搜索完毕后有个搜索历史，然后清空搜索历史。（这些比较基础请参考源代码）<br>
   #### 主要的代码实现：<br>
    ```
@@ -82,6 +83,7 @@
        .catch((error) => {console.log(error)})
     }
    ```
+   <br>
   * 写文章发布文章的功能：写文章和发布文章当然需要数据的存取，而且这是一个分享好物的功能必须得有图片才更有说服力，而因为用户发布完图片后不管是否刷新自己辛苦写的文章还是要在的呀，要不然大家还写个啥呢，但是发布出去之后写文章和预览页面就不能还保存着发布出去的数据内容了，所以我就将写文章和预览文章的页面中的状态保存在store里面，当点击发布按钮的时候，将store里面的数据保存到localstorage当中，跳转到我的文章以及文章查看页面时则获取localstorage内的数据，现在只能获取最新的文章因为本仙女还没有将其存储为一个对象数组，以后定会慢慢折腾。<br>
  ##### 主要的代码实现：<br>
  页面实例创建完成之后：
@@ -94,7 +96,8 @@
         }
        }
  ```
- 图片的上传和删除（参考eliment-ui 的upload组件）<br>
+ <br>
+图片的上传和删除（参考eliment-ui 的upload组件）<br>
  ```
   handleRemove(file, fileList) {
         this.fileListurl=fileList;
@@ -116,6 +119,7 @@
        this.$refs.send.className="send_active"
      }
  ```
+ <br>
 预览<br>
  ```
   pre_see(){
@@ -125,6 +129,7 @@
         this.$router.push({path:'/pre_see'})
       },
  ```
+ <br>
 发布成功(引用了Toast吐司提示)：值得注意的是不要忘记在引用的页面加上import { Toast } from 'mint-ui';
  ```
  send_out(){
